@@ -1,0 +1,79 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="DeberSemana31.Principal">
+    <ContentPage.Content>
+
+
+
+
+        <StackLayout>
+
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition  />
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition />
+                </Grid.ColumnDefinitions>
+
+                <Label Text=""  FontSize="14"  x:Name="txtBienvenida" VerticalOptions="Center" Grid.Row="1" Grid.Column="0"  />
+           
+            </Grid>
+
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+
+
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+
+                    <RowDefinition  />
+
+
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition />
+                    <ColumnDefinition />
+                </Grid.ColumnDefinitions>
+
+                <Label Text="Nota Seguimiento"  VerticalOptions="Center" Grid.Row="1" Grid.Column="0"  />
+                <Entry x:Name="txtseguimiento1" Grid.Row="1" Grid.Column="1" Keyboard="Numeric"  ></Entry>
+
+                <Label Text="Examen"  VerticalOptions="Center" Grid.Row="2" Grid.Column="0"  />
+                <Entry x:Name="txtExamen" Grid.Row="2" Grid.Column="1"  Keyboard="Numeric"  ></Entry>
+
+                <Label Text="Nota Parcial 1"  VerticalOptions="Center" Grid.Row="3" Grid.Column="0"  />
+                <Label Text="" x:Name="txtNotaParcial1" VerticalOptions="Center" Grid.Row="3" Grid.Column="1"  />
+
+
+
+                <Label Text="Parcial 2"  VerticalOptions="Center" Grid.Row="4" Grid.Column="0"  />
+
+                <Label Text="Nota Seguimiento 2"  VerticalOptions="Center" Grid.Row="5" Grid.Column="0"  />
+                <Entry x:Name="txtseguimiento2" Grid.Row="5" Grid.Column="1" Keyboard="Numeric"  ></Entry>
+
+                <Label Text="Examen Final"  VerticalOptions="Center" Grid.Row="6" Grid.Column="0"  />
+                <Entry x:Name="txtExamenF" Grid.Row="6" Grid.Column="1"  Keyboard="Numeric" ></Entry>
+
+                <Label Text="Nota Parcial 2"  VerticalOptions="Center" Grid.Row="7" Grid.Column="0"  />
+                <Label Text="" x:Name="txtNotaParcial2" VerticalOptions="Center" Grid.Row="7" Grid.Column="1"  />
+
+
+
+                <Label Text="Nota Final"  VerticalOptions="Center"  Grid.Row="8" Grid.Column="0"/>
+                <Entry x:Name="notaFinal"  Grid.Row="8" Grid.Column="1" IsReadOnly="true" ></Entry>
+
+            </Grid>
+
+            <Button Text="Calcular" Clicked="Button_Clicked"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

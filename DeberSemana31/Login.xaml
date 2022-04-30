@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="DeberSemana31.Login">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="LOGIN" FontSize="16" Padding="30,0,30,0"/>
+            <Image Source="guitarra.jfif"
+               HeightRequest="100" />
+            <Entry x:Name="txtusuario" Placeholder="Usuario" />
+            <Entry x:Name="txtcontrasena" Placeholder="Contrasena" IsPassword="true"/>
+            <Button x:Name="btnAbrir" Text="Abrir" Clicked="btnAbrir_Clicked"></Button>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
